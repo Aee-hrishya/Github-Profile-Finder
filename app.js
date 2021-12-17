@@ -22,8 +22,9 @@ searchUser.addEventListener("keyup", (e) => {
                     ui.showAlert("User doesn't exist","alert alert-danger");
                 }
                 else {
-                    //show the profile
+                    //show the profile and the repos of the user
                     ui.showProfile(data.profile);
+                    ui.showRepos(data.repos);
                 }
             });
     }
